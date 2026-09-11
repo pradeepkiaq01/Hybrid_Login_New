@@ -8,7 +8,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="16 6 8 10"/>
+          <include name="runScenario" invocation-numbers="16 10"/>
           <include name="setBrowser"/>
         </methods>
       </class> <!-- com_Runner.Test_Runner -->
@@ -21,7 +21,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="16 6 8 10"/>
+          <include name="runScenario" invocation-numbers="16 10"/>
           <include name="setBrowser"/>
         </methods>
       </class> <!-- com_Runner.Test_Runner -->
@@ -33,8 +33,8 @@
       <class name="com_Runner.Test_Runner">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="16 10"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="16 6 8 10 15"/>
           <include name="setBrowser"/>
         </methods>
       </class> <!-- com_Runner.Test_Runner -->

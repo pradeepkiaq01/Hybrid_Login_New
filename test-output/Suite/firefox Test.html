@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>firefox Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 08 15:53:46 IST 2026</td>
+<td>Started on:</td><td>Thu Sep 10 17:38:52 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>5314 seconds (5314518 ms)</td>
+<tr><td>Total time:</td><td>1165 seconds (1165192 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,86 +76,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h2[text()=&apos;My Account&apos;]&apos;
-(tried for 10 seconds with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at com_Utils.ElementUtils.waitForVisibility(ElementUtils.java:32)
-	at com_Utils.ElementUtils.getText(ElementUtils.java:54)
-	at com_Pom.MyAccount_Pom.getTextMyAcc(MyAccount_Pom.java:32)
-	at com_Pom.LoginPage_Pom.validation(LoginPage_Pom.java:72)
-	at com_Steps.LoginPage_Steps.validate_with_result(LoginPage_Steps.java:41)
-	at ✽.validate with result &quot;My Account&quot;(file:///C:/New%20Workspace/com_Hybrid_Login/src/test/resource/com_features/LoginPages.feature:12)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[text()=&apos;My Account&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9cecf47e-e689-411b-ab80-562bdc8a6f74, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 16884, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9cecf47e-e689-411b-ab80-562bdc8a6f74
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
-	... 6 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2027744894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2027744894'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h2[text()=&apos;My Account&apos;]&apos;
-(tried for 10 seconds with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at com_Utils.ElementUtils.waitForVisibility(ElementUtils.java:32)
-	at com_Utils.ElementUtils.getText(ElementUtils.java:54)
-	at com_Pom.MyAccount_Pom.getTextMyAcc(MyAccount_Pom.java:32)
-	at com_Pom.LoginPage_Pom.validation(LoginPage_Pom.java:72)
-	at com_Steps.LoginPage_Steps.validate_with_result(LoginPage_Steps.java:41)
-	at ✽.validate with result &quot;My Account&quot;(file:///C:/New%20Workspace/com_Hybrid_Login/src/test/resource/com_features/LoginPages.feature:12)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[text()=&apos;My Account&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9cecf47e-e689-411b-ab80-562bdc8a6f74, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 16884, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9cecf47e-e689-411b-ab80-562bdc8a6f74
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
-	... 6 more
-</pre></div></td>
-<td>70</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
 <td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user remains logged in after click back", "Login Page Functionality"</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h2[text()=&apos;My Account&apos;]&apos;
 (tried for 10 seconds with 500 milliseconds interval)
@@ -170,11 +90,11 @@ Session ID: 9cecf47e-e689-411b-ab80-562bdc8a6f74
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[text()=&apos;My Account&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e9840f12-5de4-4bf0-8650-42242d1241a6, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17388, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e9840f12-5de4-4bf0-8650-42242d1241a6
+Command: [4889f93a-3f35-4f02-ae31-e4eea436c037, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 4900, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4889f93a-3f35-4f02-ae31-e4eea436c037
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -188,14 +108,14 @@ Session ID: e9840f12-5de4-4bf0-8650-42242d1241a6
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
 	... 6 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace975772986", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace975772986'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h2[text()=&apos;My Account&apos;]&apos;
+</pre></div><a href='#' onClick='toggleBox("stack-trace2059592913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2059592913'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h2[text()=&apos;My Account&apos;]&apos;
 (tried for 10 seconds with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
@@ -208,11 +128,11 @@ Session ID: e9840f12-5de4-4bf0-8650-42242d1241a6
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[text()=&apos;My Account&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e9840f12-5de4-4bf0-8650-42242d1241a6, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 17388, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e9840f12-5de4-4bf0-8650-42242d1241a6
+Command: [4889f93a-3f35-4f02-ae31-e4eea436c037, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 4900, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4889f93a-3f35-4f02-ae31-e4eea436c037
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -226,24 +146,24 @@ Session ID: e9840f12-5de4-4bf0-8650-42242d1241a6
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
 	... 6 more
 </pre></div></td>
-<td>87</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
+<td>80</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
 <tr>
 <td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user session is maintained after closed browser", "Login Page Functionality"</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [2cadccd3-5a1d-4c3d-984a-025ba31ce0e6, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 16468, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2cadccd3-5a1d-4c3d-984a-025ba31ce0e6
+Command: [165e82a4-d82e-429a-9b85-1ebc5cbf5a6a, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 12960, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 165e82a4-d82e-429a-9b85-1ebc5cbf5a6a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -257,7 +177,7 @@ Session ID: 2cadccd3-5a1d-4c3d-984a-025ba31ce0e6
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
@@ -265,14 +185,14 @@ Session ID: 2cadccd3-5a1d-4c3d-984a-025ba31ce0e6
 	at com_Pom.HomePage_Pom.clickMyacnt(HomePage_Pom.java:39)
 	at com_Steps.HomePage_Steps.user_click_on_my_account(HomePage_Steps.java:26)
 	at ✽.user click on myAccount(file:///C:/New%20Workspace/com_Hybrid_Login/src/test/resource/com_features/LoginPages.feature:97)
-</pre></div><a href='#' onClick='toggleBox("stack-trace169900453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace169900453'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+</pre></div><a href='#' onClick='toggleBox("stack-trace898159845", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace898159845'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [2cadccd3-5a1d-4c3d-984a-025ba31ce0e6, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 16468, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2cadccd3-5a1d-4c3d-984a-025ba31ce0e6
+Command: [165e82a4-d82e-429a-9b85-1ebc5cbf5a6a, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 12960, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 165e82a4-d82e-429a-9b85-1ebc5cbf5a6a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -286,7 +206,7 @@ Session ID: 2cadccd3-5a1d-4c3d-984a-025ba31ce0e6
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:793)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:786)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
@@ -295,138 +215,8 @@ Session ID: 2cadccd3-5a1d-4c3d-984a-025ba31ce0e6
 	at com_Steps.HomePage_Steps.user_click_on_my_account(HomePage_Steps.java:26)
 	at ✽.user click on myAccount(file:///C:/New%20Workspace/com_Hybrid_Login/src/test/resource/com_features/LoginPages.feature:97)
 </pre></div></td>
-<td>27</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify keyboard navigation", "Login Page Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h2[text()=&apos;My Account&apos;]&apos;
-(tried for 10 seconds with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at com_Utils.ElementUtils.waitForVisibility(ElementUtils.java:32)
-	at com_Utils.ElementUtils.getText(ElementUtils.java:54)
-	at com_Pom.MyAccount_Pom.getTextMyAcc(MyAccount_Pom.java:32)
-	at com_Pom.LoginPage_Pom.validation(LoginPage_Pom.java:72)
-	at com_Steps.LoginPage_Steps.validate_with_result(LoginPage_Steps.java:41)
-	at ✽.validate with result &quot;My Account&quot;(file:///C:/New%20Workspace/com_Hybrid_Login/src/test/resource/com_features/LoginPages.feature:37)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[text()=&apos;My Account&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [51f3bc4c-5d73-4ee6-bb47-74513a20e98a, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 51f3bc4c-5d73-4ee6-bb47-74513a20e98a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
-	... 6 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1722396846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1722396846'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h2[text()=&apos;My Account&apos;]&apos;
-(tried for 10 seconds with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at com_Utils.ElementUtils.waitForVisibility(ElementUtils.java:32)
-	at com_Utils.ElementUtils.getText(ElementUtils.java:54)
-	at com_Pom.MyAccount_Pom.getTextMyAcc(MyAccount_Pom.java:32)
-	at com_Pom.LoginPage_Pom.validation(LoginPage_Pom.java:72)
-	at com_Steps.LoginPage_Steps.validate_with_result(LoginPage_Steps.java:41)
-	at ✽.validate with result &quot;My Account&quot;(file:///C:/New%20Workspace/com_Hybrid_Login/src/test/resource/com_features/LoginPages.feature:37)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //h2[text()=&apos;My Account&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [51f3bc4c-5d73-4ee6-bb47-74513a20e98a, findElement {using=xpath, value=//h2[text()=&apos;My Account&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19992, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 51f3bc4c-5d73-4ee6-bb47-74513a20e98a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
-	... 6 more
-</pre></div></td>
-<td>87</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user can login with changerd password", "Login Page Functionality"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timeout when executing request (POST http://localhost:39021/session/41d5dc1c-c398-46f5-a1e9-f8d93c515eb2/element/1f2d2fdd-7169-46a8-a815-341b6e390ba2/click)
-Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [41d5dc1c-c398-46f5-a1e9-f8d93c515eb2, clickElement {id=1f2d2fdd-7169-46a8-a815-341b6e390ba2}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19912, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (41d5dc1c-c398-46f5-a1e9-f8d93c515eb2)] -&gt; xpath: //a[@title=&apos;My Account&apos;]]
-Session ID: 41d5dc1c-c398-46f5-a1e9-f8d93c515eb2
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:495)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:46)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$0(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$0(JdkHttpClient.java:399)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.http.HttpTimeoutException: request timed out
-	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:572)
-	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:473)
-	... 8 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1529532662", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1529532662'><pre>org.openqa.selenium.TimeoutException: Timeout when executing request (POST http://localhost:39021/session/41d5dc1c-c398-46f5-a1e9-f8d93c515eb2/element/1f2d2fdd-7169-46a8-a815-341b6e390ba2/click)
-Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [41d5dc1c-c398-46f5-a1e9-f8d93c515eb2, clickElement {id=1f2d2fdd-7169-46a8-a815-341b6e390ba2}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 19912, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: windows, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (41d5dc1c-c398-46f5-a1e9-f8d93c515eb2)] -&gt; xpath: //a[@title=&apos;My Account&apos;]]
-Session ID: 41d5dc1c-c398-46f5-a1e9-f8d93c515eb2
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:495)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:46)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$0(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$0(JdkHttpClient.java:399)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.net.http.HttpTimeoutException: request timed out
-	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:572)
-	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:473)
-	... 8 more
-</pre></div></td>
-<td>4341</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
+<td>32</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -437,80 +227,95 @@ Caused by: java.net.http.HttpTimeoutException: request timed out
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user not logged in agin after click back", "Login Page Functionality"</td>
-<td></td>
-<td>24</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
-<td></td>
-<td>69</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
-<td></td>
-<td>73</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
 <td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user is on forget password page", "Forgot Password Functionality"</td>
 <td></td>
-<td>93</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate password filed hides entered value", "Login Page Functionality"</td>
-<td></td>
-<td>20</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to Login page", "Home Page functinality"</td>
-<td></td>
-<td>57</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate right column option navigate to login page", "Login Page Functionality"</td>
-<td></td>
-<td>23</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with inactive acount", "Login Page Functionality"</td>
-<td></td>
-<td>23</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
+<td>86</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
 <tr>
 <td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to Forgot password", "Login Page Functionality"</td>
 <td></td>
-<td>82</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user can navigate back to login page", "Login Page Functionality"</td>
-<td></td>
-<td>22</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
+<td>55</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
 <tr>
 <td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login after multiple failed attempts", "Login Page Functionality"</td>
 <td></td>
-<td>27</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
-<td></td>
-<td>56</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
-<tr>
-<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login page breadcrumb,heading,url,and title", "Login Page Functionality"</td>
-<td></td>
-<td>21</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
+<td>62</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
 <tr>
 <td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate placeholder text", "Login Page Functionality"</td>
 <td></td>
-<td>51</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
+<td>63</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate password filed hides entered value", "Login Page Functionality"</td>
+<td></td>
+<td>23</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
 <tr>
 <td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
 <td></td>
-<td>47</td>
-<td>com_Runner.Test_Runner@6e01f9b0</td></tr>
+<td>52</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
+<td></td>
+<td>63</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify keyboard navigation", "Login Page Functionality"</td>
+<td></td>
+<td>70</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate right column option navigate to login page", "Login Page Functionality"</td>
+<td></td>
+<td>46</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
+<td></td>
+<td>64</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
+<td></td>
+<td>70</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate login page breadcrumb,heading,url,and title", "Login Page Functionality"</td>
+<td></td>
+<td>42</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to Login page", "Home Page functinality"</td>
+<td></td>
+<td>50</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user not logged in agin after click back", "Login Page Functionality"</td>
+<td></td>
+<td>71</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user can login with changerd password", "Login Page Functionality"</td>
+<td></td>
+<td>37</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with diffrent credentials", "Login Page Functionality"</td>
+<td></td>
+<td>68</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate user can navigate back to login page", "Login Page Functionality"</td>
+<td></td>
+<td>49</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
+<tr>
+<td title='com_Runner.Test_Runner.runScenario()'><b>runScenario</b><br>Test class: com_Runner.Test_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate login with inactive acount", "Login Page Functionality"</td>
+<td></td>
+<td>66</td>
+<td>com_Runner.Test_Runner@275bf9b3</td></tr>
 </table><p>
 </body>
 </html>
